@@ -1,0 +1,165 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{geometry}
+
+\geometry{top=0.35in, bottom=0.35in, left=0.5in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1.5pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=-1pt, topsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Lakshya Singhi} & \href{https://github.com/lakshya0511}{\underline{GitHub}}, \href{https://www.linkedin.com/in/lakshya-singhi-a3108736a/}{\underline{LinkedIn}} \\
+  \href{mailto:lakshyasinghi16@gmail.com}{lakshyasinghi16@gmail.com} \quad +91 9330460428 & Manipal, Karnataka \\
+\end{tabular*}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal Institute of Technology $|$ \normalfont\small GPA: 8.54/10}{Manipal, Karnataka}
+      {Bachelor's of Technology in Information Technology}{August 2024 -- May 2028}
+      \vspace{2pt}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, 
+      Operating Systems, Database Management Systems,  Computer Networks, System Design, Data Analytics}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {EaseOps}{June 2026 -- July 2026}
+      {Frontend Developer Intern}{}
+      \vspace{1pt}
+    \resumeItemListStart
+      \resumeItem{Developed, tested, and debugged software features across enterprise web and mobile applications, improving product quality, reliability, and maintainability.}
+      \resumeItem{Diagnosed and resolved client-reported software defects through log analysis, API inspection, and root-cause analysis, improving system performance and reducing recurring issues.}
+      \resumeItem{Collaborated with cross-functional engineering and product teams to gather feature requirements, implement technical solutions, and improve frontend-backend integration.}
+      \resumeItem{Implemented frontend features based on product requirements and collaborated with backend developers to ensure seamless API integration and functionality.}
+    \resumeItemListEnd
+
+    \vspace{2pt}
+    \resumeSubheading
+      {Development Team Member}{December 2025 -- Present}
+      {Student Council, MIT Manipal}{}
+      \vspace{1pt}
+    \resumeItemListStart
+      \resumeItem{Designed and developed a scalable Club Management System using modular software architecture, implementing secure role-based authentication, approval workflows, and RESTful APIs.}
+      \resumeItem{Built responsive user interfaces and integrated RESTful APIs while collaborating with stakeholders to deliver maintainable, production-ready software.}
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeSubheading
+      {App Dev Head}{July 2025 -- Present}
+      {ACM Manipal}{}
+      \vspace{1pt}
+    \resumeItemListStart
+      \resumeItem{Led a team of developers across the software development lifecycle, conducting code reviews, mentoring junior members, and ensuring timely delivery of high-quality software solutions.}
+      \resumeItem{Conducted workshops on object-oriented programming, software design principles, and engineering best practices while coordinating cross-functional technical teams.}
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeSubheading
+      {Software Development Intern}{January 2026 -- April 2026}
+      {Glo School (Gyan Saarthi Education Pvt Ltd)}{}
+      \vspace{1pt}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented scalable backend services using Flutter and Firebase, optimizing Firestore data models for reliable real-time synchronization.}
+      \resumeItem{Delivered production-ready software features through iterative development, testing, debugging, and collaboration within an agile engineering team.(\href{https://drive.google.com/file/d/12q9jS7Z0fGUwRlL-mA-XL8nYIhbcy4dA/view}{\underline{View LOR}})}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Dhan Mitra -- Fintech Simulation Platform} $|$ \textit{\small Flutter, Firebase}}{January 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Designed and developed a modular cross-platform fintech application following object-oriented design principles, integrating financial education, virtual trading, and portfolio management.}
+      \resumeItem{Designed scalable Firestore database architecture with secure authentication and real-time synchronization; implemented SIP, SWP, and stock market simulation engines with portfolio and wallet management.}
+      \resumeItem{Implemented modular state management and reusable UI components, improving code maintainability and enabling scalable feature development.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Revels OM Portal} $|$ \textit{\small React, Node.js, PostgreSQL}}{December 2025 -- January 2026}
+    \resumeItemListStart
+      \resumeItem{Designed scalable backend architecture supporting 700+ participants through optimized PostgreSQL schemas, RESTful APIs, and efficient booking workflows.}
+      \resumeItem{Implemented role-based authorization and scalable participant management workflows, ensuring high availability and reliable performance under peak concurrent traffic.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Xuberance Event Management App} $|$ \textit{\small Flutter, Firebase}}{August 2022 -- October 2022}
+    \resumeItemListStart
+      \resumeItem{Developed a cross-platform event management application using reusable Flutter architecture and Firebase real-time synchronization, enabling seamless event registration and live updates for 200+ participants.}
+      \resumeItem{Implemented Firebase Authentication, Firestore integration, and push notifications to support seamless participant engagement during the event.}
+    \resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]
+  \small{\item{
+    \textbf{Languages:} Java, Python, C, SQL \\
+    \textbf{Software Engineering:} Object-Oriented Programming, Data Structures \& Algorithms, Software Design, System Design, REST APIs, Backend Development, Frontend Development, Database Design, Testing \\
+    \textbf{Frameworks \& Libraries:} Flutter, React, Next.js, Node.js, Firebase \\
+    \textbf{Databases:} PostgreSQL, Firestore \\
+    \textbf{Tools:} Git, GitHub, Linear, Figma, Canva
+  }}
+\end{itemize}
+
+\end{document}
