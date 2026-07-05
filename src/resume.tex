@@ -12,8 +12,10 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{geometry}
+\usepackage{graphicx}
+\graphicspath{{assets/}{../assets/}}
 
-\geometry{top=0.35in, bottom=0.35in, left=0.5in, right=0.5in}
+\geometry{top=0.3in, bottom=0.3in, left=0.45in, right=0.45in}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -46,7 +48,7 @@
     \item
     \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -58,10 +60,21 @@
 \begin{document}
 
 %----------HEADING----------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Huge Lakshya Singhi} & \href{https://github.com/lakshya0511}{\underline{GitHub}}, \href{https://www.linkedin.com/in/lakshya-singhi-a3108736a/}{\underline{LinkedIn}} \\
-  \href{mailto:lakshyasinghi16@gmail.com}{lakshyasinghi16@gmail.com} \quad +91 9330460428 & Manipal, Karnataka \\
-\end{tabular*}
+\begin{tabularx}{\textwidth}{@{}X c@{}}
+  \begin{minipage}[c]{\linewidth}
+    \textbf{\Huge Lakshya Singhi} \\[8pt]
+    \href{mailto:lakshyasinghi16@gmail.com}{lakshyasinghi16@gmail.com} \quad +91 93304 60428 \\[5pt]
+    \href{https://github.com/lakshya0511}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/lakshya-singhi-a3108736a/}{\underline{LinkedIn}}
+  \end{minipage}
+  &
+  \begin{minipage}[c]{0.95in}
+    \raggedleft
+    \setlength{\fboxsep}{0pt}%
+    \frame{\includegraphics[width=0.75in,height=0.9in]{image.jpeg}}
+  \end{minipage}
+\\
+\end{tabularx}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -85,20 +98,21 @@
       {Frontend Developer Intern}{}
       \vspace{1pt}
     \resumeItemListStart
-      \resumeItem{Built the Asset Management, Reminders, and Leaderboard modules for an enterprise Hospital Management System, shipping cross-platform screens in Flutter (mobile) and React (web) from product requirements.}
-      \resumeItem{Developed interactive dashboards that surfaced asset and activity metrics, wiring the UI to backend REST APIs for data fetching, state updates, and error handling.}
-      \resumeItem{Integrated frontend components with backend services and resolved data-mapping and pagination mismatches that were breaking list and dashboard views in production.}
-      \resumeItem{Debugged client-reported production defects by inspecting API responses and application logs to trace root causes, cutting down recurring frontend-backend sync issues.}
+      \resumeItem{Engineered the Asset Management, Reminders, and Leaderboard modules for an enterprise Hospital Management System, delivering cross-platform screens in Flutter (mobile and web) from product requirements to production.}
+      \resumeItem{Developed interactive dashboards that surfaced asset and activity metrics, integrating the UI with backend REST APIs for data fetching, state management, and error handling.}
+      \resumeItem{Collaborated cross-functionally with backend engineers to integrate frontend components with backend services, resolving data-mapping and pagination defects that were breaking list and dashboard views in production.}
+      \resumeItem{Debugged and resolved client-reported production defects by inspecting API responses and application logs to trace root causes, reducing recurring frontend-backend synchronization issues.}
     \resumeItemListEnd
 
     \vspace{2pt}
     \resumeSubheading
-      {Software Development Intern}{January 2026 -- April 2026}
-      {Glo School (Gyan Saarthi Education Pvt Ltd)}{}
+      {Glo School (Gyan Saarthi Education Pvt Ltd)}{January 2026 -- April 2026}
+      {Software Development Intern}{}
       \vspace{1pt}
     \resumeItemListStart
-      \resumeItem{Built backend services in Flutter and Firebase and modeled Firestore collections to keep student and course data synced across devices in real time.}
-      \resumeItem{Shipped features through iterative development, testing, and debugging within an agile team, working across the frontend-backend boundary. (\href{https://drive.google.com/file/d/12q9jS7Z0fGUwRlL-mA-XL8nYIhbcy4dA/view}{\underline{View LOR}})}
+      \resumeItem{Built a Flutter and Firebase web application for kindergarten teachers, enabling daily task management, lesson planning, instructional workflows, and student feedback through a centralized dashboard.}
+      \resumeItem{Designed Firestore data models and implemented application features with real-time synchronization, collaborating in an Agile team to deliver, test, and debug features across the full application stack.   
+         (\href{https://drive.google.com/file/d/12q9jS7Z0fGUwRlL-mA-XL8nYIhbcy4dA/view}{\underline{View LOR}})}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -108,22 +122,24 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Dhan Mitra -- Fintech Simulation Platform} $|$ \textit{\small Flutter, Firebase} $|$ \href{}{\underline{GitHub}} $|$ \href{}{\underline{Live Demo}}}{January 2026 -- Present}
+      {\textbf{Dhan Mitra -- Fintech Simulation Platform} $|$ \textit{\small Flutter, Firebase} $|$ \href{https://github.com/lakshya0511/dhan_mitra}{\underline{GitHub}} $|$ \href{https://dhanmitra-26.web.app/}{\underline{Live Demo}}}{January 2026 -- Present}
     \resumeItemListStart
-      \resumeItem{Built a cross-platform fintech app in Flutter and Firebase that lets users learn investing through virtual trading and portfolio management with no real-money risk.}
-      \resumeItem{Implemented SIP, SWP, and stock-market simulation engines backed by Firestore, with authentication, wallet, and portfolio tracking kept in sync across devices in real time.}
-      \resumeItem{Structured the app with modular state management and reusable widgets so new financial modules could be added without touching existing screens.}
+      \resumeItem{Developed a cross-platform fintech learning platform using Flutter and Firebase, combining multilingual investment courses, scenario-based quizzes, and virtual trading to help users learn investing through hands-on practice.}
+     \resumeItem{Implemented SIP, SWP, and stock-market simulation engines with Firestore, alongside AI-generated personalized quiz feedback, authentication, wallet management, and real-time portfolio synchronization.}
+     \resumeItem{Architected the application using modular state management and reusable components, applying object-oriented design principles to support scalable feature development and future financial learning modules.}
     \resumeItemListEnd
 
+    \vspace{3pt}
     \resumeProjectHeading
-      {\textbf{Revels OM Portal} $|$ \textit{\small React, Node.js, PostgreSQL} $|$ \href{}{\underline{GitHub}} $|$ \href{}{\underline{Live Demo}}}{December 2025 -- January 2026}
+      {\textbf{Revels OM Portal} $|$ \textit{\small React, Node.js, PostgreSQL}}{December 2025 -- January 2026}
     \resumeItemListStart
-      \resumeItem{Built the backend for an event operations portal serving 700+ participants using Node.js and PostgreSQL, with normalized schemas and REST endpoints for registration and slot booking.}
-      \resumeItem{Added role-based authorization and booking workflows that held up under peak concurrent registration traffic without double-booking slots.}
+      \resumeItem{Built a scalable backend for a room booking portal serving 700+ outstation participants using Node.js and PostgreSQL, implementing normalized database schemas and REST APIs for room allocation and booking management.}
+      \resumeItem{Implemented role-based authorization and booking workflows that sustained peak concurrent registration traffic without double-booking slots.}
     \resumeItemListEnd
 
+    \vspace{3pt}
     \resumeProjectHeading
-      {\textbf{Xuberance Event Management App} $|$ \textit{\small Flutter, Firebase} $|$ \href{}{\underline{GitHub}} $|$ \href{}{\underline{Live Demo}}}{August 2022 -- October 2022}
+      {\textbf{Xuberance Event Management App} $|$ \textit{\small Flutter, Firebase}}{August 2022 -- October 2022}
     \resumeItemListStart
       \resumeItem{Built a cross-platform event app in Flutter and Firebase for 200+ participants, supporting event registration and live schedule updates.}
       \resumeItem{Implemented Firebase Authentication, Firestore integration, and push notifications to keep participants updated during the event.}
@@ -137,23 +153,21 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Development Team}{December 2025 -- Present}
+      {Student Council, MIT Manipal}{}
+      \vspace{1pt}
+    \resumeItemListStart
+      \resumeItem{Develop backend systems and web portals for college fests, implementing REST APIs and features to streamline event operations.}
+      \resumeItem{Built a Club Management System with role-based authentication, multi-level approval workflows, and REST APIs used to coordinate club activities across campus.}
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeSubheading
       {App Dev Head}{July 2025 -- Present}
       {ACM Manipal}{}
       \vspace{1pt}
     \resumeItemListStart
-      \resumeItem{Lead the app development team across the software development lifecycle, running code reviews and mentoring junior developers to keep a shared code standard.}
-      \resumeItem{Run workshops on object-oriented programming and software design that have onboarded new members onto the team's projects.}
+      \resumeItem{Lead the App Development domain by organizing technical sessions, mentoring members, and coordinating development activities.}
     \resumeItemListEnd
-
-    \vspace{2pt}
-    \resumeSubheading
-      {Development Team Member}{December 2025 -- Present}
-      {Student Council, MIT Manipal}{}
-      \vspace{1pt}
-    \resumeItemListStart
-      \resumeItem{Built a Club Management System with role-based authentication, multi-level approval workflows, and REST APIs used to coordinate club activities across campus.}
-    \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
@@ -162,20 +176,10 @@
   \small{\item{
     \textbf{Languages:} Java, Python, C, JavaScript, Dart, SQL \\
     \textbf{Frameworks \& Libraries:} React, Next.js, Node.js, Flutter \\
-    \textbf{Backend \& APIs:} REST APIs, Firebase, Firebase Authentication, Backend Development \\
-    \textbf{Databases:} PostgreSQL, Firestore, Database Design \\
+    \textbf{Backend \& Databases:} REST APIs, Firebase, PostgreSQL, Firestore, Database Design, Backend Development \\
     \textbf{Core CS:} Data Structures \& Algorithms, Object-Oriented Programming, Operating Systems, DBMS, Computer Networks, System Design \\
     \textbf{Developer Tools:} Git, GitHub, Postman, Figma, Linear
   }}
-\end{itemize}
-
-%-----------ACHIEVEMENTS-----------
-\section{Achievements}
-\begin{itemize}[leftmargin=0.15in, itemsep=-1pt, topsep=2pt]
-  \small
-  \item Solved \_\_\_+ Data Structures \& Algorithms problems across LeetCode and competitive programming platforms.
-  \item Participant, Samsung Solve for Tomorrow.
-  \item Technical Core Committee, M\# Hackathon.
 \end{itemize}
 
 \end{document}
